@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+  <title>Budget App</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <p>Available Budget in <span class="datetime">%Month%</span></p>
+      <p id="amount">1,234.64</p>
+      <div class="tab" style="background-color:rgb(71, 187, 187)">
+        <div>INCOME</div>
+        <div id="income">1,234.64</div>
+      </div>
+      <div class="tab" style="background-color:rgb(240, 88, 88)">
+        <div>EXPENSES</div>
+        <div id="expenses">%amount% <span class="tab_per">---%</span></div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="input">
+        <select name="sign" id="sign">
+          <option value="inc">+</option>
+          <option value="exp">-</option>
+        </select>
+        <input type="text" class="description" placeholder="Add Description" />
+        <input type="number" class="value" placeholder="Value" />
+        <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+    </div>
+  </section>
+  <!--add description-->
+  <footer>
+    <div class="details">
+      <div class="income_desc">
+        <h3>INCOME</h3>
+        
+        <!--div class="item" id="inc-0">
+          <div class="item_description">description</div>
+          <div class="right">
+            <div class="item_value">value</div>
+            <div class="item_delete">
+              <button class="delete_btn">
+                <i class="ion-ios-close-outline"></i>
+              </button>
+            </div>
+          </div>
+        </div-->
+      
+      </div>
+
+      <div class="expenses_desc">
+        <h3>EXPENSES</h3>
+        <!--div class="item" id="exp-0">
+          <div class="item_description">description</div>
+          <div class="right">
+            <div class="item_value">value<span class="tab_per">21%</span></div>
+            <div class="item_delete">
+              <button class="delete_btn">
+                <i class="ion-ios-close-outline"></i>
+              </button>
+            </div>
+          </div>
+        </div-->
+      </div>
+
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
